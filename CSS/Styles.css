@@ -412,13 +412,33 @@ body {
     background: var(--color-primary);
 }
 
-.calendly-container {
-    max-width: 800px;
+.calendly-wrapper {
+    max-width: 1000px;
     margin: 0 auto;
     background: var(--color-secondary);
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid rgba(232, 228, 217, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.calendly-inline-widget {
+    width: 100% !important;
+    background: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .agenda-section {
+        padding: 4rem 0;
+    }
+    
+    .calendly-wrapper {
+        border-radius: 10px;
+    }
+    
+    .calendly-inline-widget {
+        height: 800px !important;
+    }
 }
 
 /* Footer */
