@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragma Salon Boutique - Belleza y Estilo</title>
-    <link rel="stylesheet" href="/CSS/Styles.css">
+    <link rel="stylesheet" href="./CSS/Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
     <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="hero-logo-container">
-                <img src="/Media/logo.jpg" alt="Fragma Salon Boutique" class="hero-logo">
+                <img src="./Media/logo.jpg" alt="Fragma Salon Boutique" class="hero-logo">
             </div>
             <h1 class="hero-title">FRAGMA</h1>
             <p class="hero-subtitle">Salon Boutique</p>
@@ -97,19 +97,19 @@
             <h2 class="section-title">Galería</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="/Media/muestra1.png" alt="Trabajo 1" class="gallery-img">
+                    <img src="./Media/muestra1.png" alt="Trabajo 1" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>Ver más</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/Media/muestra2.png" alt="Trabajo 2" class="gallery-img">
+                    <img src="./Media/muestra2.png" alt="Trabajo 2" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>Ver más</span>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/Media/muestra3.png" alt="Trabajo 3" class="gallery-img">
+                    <img src="./Media/muestra3.png" alt="Trabajo 3" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>Ver más</span>
                     </div>
@@ -142,24 +142,27 @@
         </div>
     </section>
 
-    <!-- Agenda Section -->
-    <section id="agenda" class="agenda-section">
-        <div class="container">
-            <h2 class="section-title">Agenda tu Cita</h2>
-            <div class="calendly-container">
+<!-- Agenda Section -->
+<section id="agenda" class="agenda-section">
+    <div class="container">
+        <h2 class="section-title">Agenda tu Cita</h2>
+        <div class="calendly-wrapper">
+            <div class="calendly-container" id="calendlyContainer">
                 <!-- Calendly inline widget -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/suarezdeviajuansebastian/reserva-tu-turno-puissante-beauty-salon" style="min-width:320px;height:700px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <div class="calendly-inline-widget" 
+                     data-url="https://calendly.com/suarezdeviajuansebastian/reserva-tu-turno-puissante-beauty-salon" 
+                     style="min-width:320px;height:100%;"></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="/Media/logo.png" alt="Fragma Logo">
+                    <img src="./Media/logo.jpg" alt="Fragma Logo">
                     <h3>FRAGMA</h3>
                     <p>Salon Boutique</p>
                 </div>
